@@ -1,0 +1,26 @@
+{
+  "name": "select_menu_item",
+  "description": "通过AppleScript选择菜单栏项。例如 select_menu_item('Safari', 'File', 'New Window')。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "app_name": {
+        "type": "string",
+        "description": "应用名称"
+      },
+      "menu_name": {
+        "type": "string",
+        "description": "菜单名称，如 File, Edit, View"
+      },
+      "menu_item_name": {
+        "type": "string",
+        "description": "菜单项名称"
+      }
+    },
+    "required": [
+      "app_name",
+      "menu_name",
+      "menu_item_name"
+    ]
+  }
+}

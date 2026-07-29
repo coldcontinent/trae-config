@@ -1,0 +1,44 @@
+{
+  "name": "mouse_drag",
+  "description": "从起始坐标拖拽鼠标到目标坐标。坐标使用全局逻辑点坐标系（与mouse_click相同）。用于选择文本、移动窗口等操作。支持左键、右键、中键拖拽。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "start_x": {
+        "type": "number",
+        "description": "起始X坐标（全局逻辑点）"
+      },
+      "start_y": {
+        "type": "number",
+        "description": "起始Y坐标（全局逻辑点）"
+      },
+      "end_x": {
+        "type": "number",
+        "description": "目标X坐标（全局逻辑点）"
+      },
+      "end_y": {
+        "type": "number",
+        "description": "目标Y坐标（全局逻辑点）"
+      },
+      "duration": {
+        "type": "number",
+        "description": "拖拽持续时间（秒），默认 0.5"
+      },
+      "button": {
+        "type": "string",
+        "enum": [
+          "left",
+          "right",
+          "middle"
+        ],
+        "description": "默认 left"
+      }
+    },
+    "required": [
+      "start_x",
+      "start_y",
+      "end_x",
+      "end_y"
+    ]
+  }
+}

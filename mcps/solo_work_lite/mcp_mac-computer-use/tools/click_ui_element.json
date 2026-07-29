@@ -1,0 +1,34 @@
+{
+  "name": "click_ui_element",
+  "description": "通过AppleScript点击指定应用窗口中的UI元素。比坐标点击更精确。element_role: button, text field, checkbox, pop up button, radio button等。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "app_name": {
+        "type": "string",
+        "description": "应用名称"
+      },
+      "element_role": {
+        "type": "string",
+        "description": "元素类型，如 button, text field, checkbox"
+      },
+      "element_name": {
+        "type": "string",
+        "description": "元素名称"
+      },
+      "window_index": {
+        "type": "integer",
+        "description": "窗口序号，默认 1"
+      },
+      "parent_path": {
+        "type": "string",
+        "description": "父元素路径（可选），如 group 1 of group 2"
+      }
+    },
+    "required": [
+      "app_name",
+      "element_role",
+      "element_name"
+    ]
+  }
+}

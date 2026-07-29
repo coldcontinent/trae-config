@@ -1,0 +1,16 @@
+{
+  "name": "keyboard_type",
+  "description": "输入文本。ASCII文本用keystroke，中文等非ASCII文本自动用剪贴板粘贴（Command+V）。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "text": {
+        "type": "string",
+        "description": "要输入的文本"
+      }
+    },
+    "required": [
+      "text"
+    ]
+  }
+}

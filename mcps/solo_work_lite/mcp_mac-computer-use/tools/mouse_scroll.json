@@ -1,0 +1,29 @@
+{
+  "name": "mouse_scroll",
+  "description": "在指定位置滚动鼠标滚轮。支持垂直和水平滚动。坐标使用全局逻辑点坐标系。正值scroll_y向上滚动，正值scroll_x向右滚动。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "number",
+        "description": "X坐标（全局逻辑点）"
+      },
+      "y": {
+        "type": "number",
+        "description": "Y坐标（全局逻辑点）"
+      },
+      "scroll_y": {
+        "type": "number",
+        "description": "垂直滚动量（正=上，负=下），默认 3"
+      },
+      "scroll_x": {
+        "type": "number",
+        "description": "水平滚动量（正=右，负=左），默认 0"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+}

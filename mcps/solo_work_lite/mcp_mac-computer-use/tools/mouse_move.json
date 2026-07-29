@@ -1,0 +1,21 @@
+{
+  "name": "mouse_move",
+  "description": "移动鼠标光标到指定坐标（不点击）。坐标使用全局逻辑点坐标系。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "number",
+        "description": "X坐标（全局逻辑点）"
+      },
+      "y": {
+        "type": "number",
+        "description": "Y坐标（全局逻辑点）"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+}

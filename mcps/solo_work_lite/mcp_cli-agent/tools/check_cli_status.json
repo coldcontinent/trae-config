@@ -1,0 +1,8 @@
+{
+  "name": "check_cli_status",
+  "description": "检测本地已安装的 CLI 编码代理（claude、codex）及其版本。在调用 run_claude_code 或 run_codex 之前，可先用此工具确认 CLI 是否可用。",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

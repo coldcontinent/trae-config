@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Sensitive files (use .example templates instead)
+shell/zshrc
+claude/settings.json
+claude/.claude.json

@@ -1,0 +1,16 @@
+{
+  "name": "open_app",
+  "description": "启动一个应用程序。支持应用名称或路径。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "name_or_path": {
+        "type": "string",
+        "description": "应用名称或完整路径"
+      }
+    },
+    "required": [
+      "name_or_path"
+    ]
+  }
+}

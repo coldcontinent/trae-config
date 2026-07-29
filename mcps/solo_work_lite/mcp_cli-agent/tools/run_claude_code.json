@@ -1,0 +1,64 @@
+{
+  "name": "run_claude_code",
+  "description": "在非交互（headless）模式下运行 Claude Code CLI，将一个编码任务交给 Claude Code 执行并返回结果。适用于代码生成、重构、调试、审查等场景。需要已安装 claude CLI（npm install -g @anthropic-ai/claude-code）。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "prompt": {
+        "type": "string",
+        "description": "要执行的任务/提示词（必填）"
+      },
+      "cwd": {
+        "type": "string",
+        "description": "工作目录（可选）。Claude Code 将在此目录下操作文件"
+      },
+      "model": {
+        "type": "string",
+        "description": "使用的模型（可选），如 sonnet、opus"
+      },
+      "max_turns": {
+        "type": "integer",
+        "description": "最大 agentic 轮次（可选）"
+      },
+      "output_format": {
+        "type": "string",
+        "enum": [
+          "text",
+          "json",
+          "stream-json"
+        ],
+        "description": "输出格式，默认 text"
+      },
+      "system_prompt": {
+        "type": "string",
+        "description": "自定义系统提示词（可选）"
+      },
+      "allowed_tools": {
+        "type": "string",
+        "description": "允许的工具列表，逗号分隔（可选），如 'Read,Write,Bash'"
+      },
+      "add_dirs": {
+        "type": "string",
+        "description": "额外可读目录，逗号分隔（可选）"
+      },
+      "verbose": {
+        "type": "boolean",
+        "description": "是否输出详细日志，默认 false"
+      },
+      "extra_args": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "传递给 claude 的额外命令行参数（高级用法）"
+      },
+      "timeout": {
+        "type": "integer",
+        "description": "超时时间（秒），默认 600"
+      }
+    },
+    "required": [
+      "prompt"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+# DeepSeek API
+export DEEPSEEK_API_KEY="YOUR_DEEPSEEK_API_KEY"
+
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
+
+# Claude Code CLI - Custom API Endpoint (Aliyun MaaS)
+export ANTHROPIC_API_KEY="YOUR_ANTHROPIC_API_KEY"
+export ANTHROPIC_BASE_URL="https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic"
+export ANTHROPIC_MODEL="glm-5.2"
+
+# KiCad CLI
+export PATH="/Applications/KiCad/KiCad.app/Contents/MacOS:$PATH"

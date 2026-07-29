@@ -1,0 +1,24 @@
+{
+  "name": "keyboard_key",
+  "description": "按下指定按键。支持：return, tab, escape, delete, space, up, down, left, right, f1-f12, command, shift, control, option。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "key": {
+        "type": "string",
+        "description": "按键名称"
+      },
+      "action": {
+        "type": "string",
+        "enum": [
+          "down",
+          "up"
+        ],
+        "description": "默认 down"
+      }
+    },
+    "required": [
+      "key"
+    ]
+  }
+}

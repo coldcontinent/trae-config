@@ -1,0 +1,16 @@
+{
+  "name": "run_applescript",
+  "description": "运行任意AppleScript脚本。可控制任何应用、点击UI元素、读取界面信息等。充分发挥AppleScript的能力。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "script": {
+        "type": "string",
+        "description": "AppleScript脚本内容"
+      }
+    },
+    "required": [
+      "script"
+    ]
+  }
+}

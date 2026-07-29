@@ -1,0 +1,12 @@
+{
+    "env": {
+        "ANTHROPIC_AUTH_TOKEN": "YOUR_ANTHROPIC_AUTH_TOKEN",
+        "ANTHROPIC_BASE_URL": "https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic",
+        "ANTHROPIC_MODEL": "glm-5.2",
+        "ANTHROPIC_SMALL_FAST_MODEL": "qwen3.6-flash",
+        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+        "API_TIMEOUT_MS": "3000000",
+        "PATH": "/Applications/KiCad/KiCad.app/Contents/MacOS:/Users/YOUR_USERNAME/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin"
+    },
+    "theme": "auto"
+}

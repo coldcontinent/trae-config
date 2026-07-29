@@ -1,0 +1,16 @@
+{
+  "name": "activate_app",
+  "description": "激活并前置显示指定应用程序。如果应用未运行则尝试打开。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "app_name": {
+        "type": "string",
+        "description": "应用名称（模糊匹配）"
+      }
+    },
+    "required": [
+      "app_name"
+    ]
+  }
+}

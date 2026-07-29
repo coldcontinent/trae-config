@@ -1,0 +1,8 @@
+{
+  "name": "list_windows",
+  "description": "列出屏幕上所有可见窗口，包括应用名称、窗口标题、位置(bounds)和所在显示器(display_id)。可用此工具确定窗口在哪个显示器上。",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

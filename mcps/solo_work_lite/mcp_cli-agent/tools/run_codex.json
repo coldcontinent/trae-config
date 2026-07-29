@@ -1,0 +1,70 @@
+{
+  "name": "run_codex",
+  "description": "在非交互（exec）模式下运行 OpenAI Codex CLI，将一个编码任务交给 Codex 执行并返回结果。适用于代码生成、重构、调试等场景。需要已安装 codex CLI（npm install -g @openai/codex）。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "prompt": {
+        "type": "string",
+        "description": "要执行的任务/提示词（必填）"
+      },
+      "cwd": {
+        "type": "string",
+        "description": "工作目录（可选）"
+      },
+      "model": {
+        "type": "string",
+        "description": "使用的模型（可选），如 o3、o4-mini"
+      },
+      "full_auto": {
+        "type": "boolean",
+        "description": "是否自动批准所有操作（全自动模式），默认 false"
+      },
+      "json_output": {
+        "type": "boolean",
+        "description": "是否以 JSON 格式输出，默认 false"
+      },
+      "sandbox": {
+        "type": "string",
+        "enum": [
+          "read-only",
+          "workspace-write",
+          "danger-full-access"
+        ],
+        "description": "沙箱模式（可选）"
+      },
+      "approval_policy": {
+        "type": "string",
+        "enum": [
+          "untrusted",
+          "on-failure",
+          "on-request",
+          "never"
+        ],
+        "description": "审批策略（可选）"
+      },
+      "base_instructions": {
+        "type": "string",
+        "description": "基础指令，替代默认指令（可选）"
+      },
+      "image": {
+        "type": "string",
+        "description": "附加图片路径，逗号分隔（可选）"
+      },
+      "extra_args": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "传递给 codex 的额外命令行参数（高级用法）"
+      },
+      "timeout": {
+        "type": "integer",
+        "description": "超时时间（秒），默认 600"
+      }
+    },
+    "required": [
+      "prompt"
+    ]
+  }
+}

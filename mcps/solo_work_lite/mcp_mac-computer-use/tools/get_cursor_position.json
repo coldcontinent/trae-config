@@ -1,0 +1,8 @@
+{
+  "name": "get_cursor_position",
+  "description": "获取当前鼠标光标位置，包含所在显示器信息（display_id, origin, size, is_main）。",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

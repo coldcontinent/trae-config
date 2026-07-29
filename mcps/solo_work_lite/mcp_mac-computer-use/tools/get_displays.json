@@ -1,0 +1,8 @@
+{
+  "name": "get_displays",
+  "description": "获取所有显示器的详细信息。返回每个显示器的display_id、origin（在全局坐标系中的偏移）、size（逻辑分辨率）、is_main标志和bounds。多显示器操作前应先调用此工具了解布局。",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

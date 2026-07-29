@@ -1,0 +1,19 @@
+{
+  "name": "keyboard_hotkey",
+  "description": "同时按下多个按键组合（快捷键）。例如 [\"command\", \"c\"]。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "keys": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "按键列表"
+      }
+    },
+    "required": [
+      "keys"
+    ]
+  }
+}

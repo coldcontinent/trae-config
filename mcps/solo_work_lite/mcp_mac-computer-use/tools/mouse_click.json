@@ -1,0 +1,34 @@
+{
+  "name": "mouse_click",
+  "description": "在指定屏幕坐标点击鼠标。坐标使用全局逻辑点坐标系：原点(0,0)为主显示器左上角，副显示器可能有负坐标偏移。使用get_displays或get_cursor_position查看显示器布局。支持左键、右键、中键，支持单击和双击。",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "number",
+        "description": "X 坐标（全局逻辑点，主显示器左上角为0）"
+      },
+      "y": {
+        "type": "number",
+        "description": "Y 坐标（全局逻辑点，主显示器左上角为0）"
+      },
+      "button": {
+        "type": "string",
+        "enum": [
+          "left",
+          "right",
+          "middle"
+        ],
+        "description": "默认 left"
+      },
+      "clicks": {
+        "type": "integer",
+        "description": "点击次数，默认 1"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+}

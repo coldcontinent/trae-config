@@ -9,3 +9,5 @@ __pycache__/
 shell/zshrc
 claude/settings.json
 claude/.claude.json
+claude/.claude.json
+claude/settings.json
